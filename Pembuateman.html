@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>😱 Surprise</title>
+  <style>
+    body {
+      text-align: center;
+      background: black;
+      color: white;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    #jumpscare {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: black;
+    }
+    #jumpscare img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ada hadiah buat kamu 🎁</h2>
+  <button onclick="showScare()">Klik di sini</button>
+
+  <div id="jumpscare">
+    <img src="https://i.ibb.co/4pS0F4b/scary-face.jpg" alt="jumpscare">
+    <audio autoplay loop>
+      <source src="https://www.myinstants.com/media/sounds/screamer.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    function showScare() {
+      document.getElementById("jumpscare").style.display = "block";
+    }
+  </script>
+</body>
+</html>
